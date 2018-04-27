@@ -6,12 +6,15 @@ I decide to choose Wordpress CMS, because is very complete and its wonderfull to
 
 <b>For now this demo covers:</b>
 
-Data driven aproach;
-Framework design pattern;
-Data provider;
-Handling Javascript alerts;
-Handlind iFrames;
-Handling input, checkboxes, and other HTML tags.   
+<ul>
+<li>Data driven aproach;</li>
+<li>Framework design pattern;</li>
+<li>Data provider;</li>
+<li>Handling Javascript alerts;</li>
+<li>Handlind iFrames;</li>
+<li>Handling input, checkboxes, and other HTML tags.</li>  
+</ul>
+
 
 <b>Note:</b>
 
