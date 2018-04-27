@@ -1,0 +1,528 @@
+<html>
+<head>
+<title>TestNG:  Free CRM App Test Cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Free CRM App Test Cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Apr 27 12:43:31 WEST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>397 seconds (397381 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.testcases.PostsPageTest.selectMultiplePostsTest()'><b>selectMultiplePostsTest</b><br>Test class: com.automation.testcases.PostsPageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@class, &apos;row-title&apos;)][contains(text(), &apos;Post 1&apos;)]//parent::strong//parent::td//preceding-sibling::th//input&quot;}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;r2d2s-MacBook-Pro.local&apos;, ip: &apos;192.168.1.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85), userDataDir=/var/folders/zh/85y8wq812lj64x0jsvpf2z4w0000gn/T/.org.chromium.Chromium.J6pHnd}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=65.0.3325.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b0d81bd1b7eecbe40f53ed899a5379fe
+*** Element info: {Using=xpath, value=//a[contains(@class, &apos;row-title&apos;)][contains(text(), &apos;Post 1&apos;)]//parent::strong//parent::td//preceding-sibling::th//input}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at com.automation.pages.PostsPage.selectPostsByTitle(PostsPage.java:56)
+	at com.automation.testcases.PostsPageTest.selectMultiplePostsTest(PostsPageTest.java:62)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1189084611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1189084611'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@class, &apos;row-title&apos;)][contains(text(), &apos;Post 1&apos;)]//parent::strong//parent::td//preceding-sibling::th//input&quot;}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;r2d2s-MacBook-Pro.local&apos;, ip: &apos;192.168.1.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85), userDataDir=/var/folders/zh/85y8wq812lj64x0jsvpf2z4w0000gn/T/.org.chromium.Chromium.J6pHnd}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=65.0.3325.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b0d81bd1b7eecbe40f53ed899a5379fe
+*** Element info: {Using=xpath, value=//a[contains(@class, &apos;row-title&apos;)][contains(text(), &apos;Post 1&apos;)]//parent::strong//parent::td//preceding-sibling::th//input}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at com.automation.pages.PostsPage.selectPostsByTitle(PostsPage.java:56)
+	at com.automation.testcases.PostsPageTest.selectMultiplePostsTest(PostsPageTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.automation.testcases.PostsPageTest@490ab905</td></tr>
+<tr>
+<td title='com.automation.testcases.PostsPageTest.selectPostsTest()'><b>selectPostsTest</b><br>Test class: com.automation.testcases.PostsPageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@class, &apos;row-title&apos;)][contains(text(), &apos;Post 1&apos;)]//parent::strong//parent::td//preceding-sibling::th//input&quot;}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;r2d2s-MacBook-Pro.local&apos;, ip: &apos;192.168.1.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85), userDataDir=/var/folders/zh/85y8wq812lj64x0jsvpf2z4w0000gn/T/.org.chromium.Chromium.ngiSno}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=65.0.3325.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7b23384edb6262a5a24ed1e2d65cd95d
+*** Element info: {Using=xpath, value=//a[contains(@class, &apos;row-title&apos;)][contains(text(), &apos;Post 1&apos;)]//parent::strong//parent::td//preceding-sibling::th//input}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at com.automation.pages.PostsPage.selectPostsByTitle(PostsPage.java:56)
+	at com.automation.testcases.PostsPageTest.selectPostsTest(PostsPageTest.java:57)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace894024873", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace894024873'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@class, &apos;row-title&apos;)][contains(text(), &apos;Post 1&apos;)]//parent::strong//parent::td//preceding-sibling::th//input&quot;}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;r2d2s-MacBook-Pro.local&apos;, ip: &apos;192.168.1.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85), userDataDir=/var/folders/zh/85y8wq812lj64x0jsvpf2z4w0000gn/T/.org.chromium.Chromium.ngiSno}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=65.0.3325.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7b23384edb6262a5a24ed1e2d65cd95d
+*** Element info: {Using=xpath, value=//a[contains(@class, &apos;row-title&apos;)][contains(text(), &apos;Post 1&apos;)]//parent::strong//parent::td//preceding-sibling::th//input}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at com.automation.pages.PostsPage.selectPostsByTitle(PostsPage.java:56)
+	at com.automation.testcases.PostsPageTest.selectPostsTest(PostsPageTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.automation.testcases.PostsPageTest@490ab905</td></tr>
+<tr>
+<td title='com.automation.testcases.RemoveMediaTest.validateRemoveMedia()'><b>validateRemoveMedia</b><br>Test class: com.automation.testcases.RemoveMediaTest<br>Parameters: cat1</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@aria-label=&apos;cat1&apos;]//parent::div//preceding-sibling::div&quot;}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;r2d2s-MacBook-Pro.local&apos;, ip: &apos;192.168.1.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85), userDataDir=/var/folders/zh/85y8wq812lj64x0jsvpf2z4w0000gn/T/.org.chromium.Chromium.aDCTp4}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=65.0.3325.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2502cb398185bdc0a5c30c9c9aefd348
+*** Element info: {Using=xpath, value=//li[@aria-label=&apos;cat1&apos;]//parent::div//preceding-sibling::div}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at com.automation.pages.RemoveMediaPage.imageThumbnailSelected(RemoveMediaPage.java:23)
+	at com.automation.testcases.RemoveMediaTest.validateRemoveMedia(RemoveMediaTest.java:53)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace176683244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace176683244'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@aria-label=&apos;cat1&apos;]//parent::div//preceding-sibling::div&quot;}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;r2d2s-MacBook-Pro.local&apos;, ip: &apos;192.168.1.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85), userDataDir=/var/folders/zh/85y8wq812lj64x0jsvpf2z4w0000gn/T/.org.chromium.Chromium.aDCTp4}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=65.0.3325.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2502cb398185bdc0a5c30c9c9aefd348
+*** Element info: {Using=xpath, value=//li[@aria-label=&apos;cat1&apos;]//parent::div//preceding-sibling::div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at com.automation.pages.RemoveMediaPage.imageThumbnailSelected(RemoveMediaPage.java:23)
+	at com.automation.testcases.RemoveMediaTest.validateRemoveMedia(RemoveMediaTest.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.automation.testcases.RemoveMediaTest@72d818d1</td></tr>
+<tr>
+<td title='com.automation.testcases.RemoveMediaTest.validateRemoveMedia()'><b>validateRemoveMedia</b><br>Test class: com.automation.testcases.RemoveMediaTest<br>Parameters: cat4</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@aria-label=&apos;cat4&apos;]//parent::div//preceding-sibling::div&quot;}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;r2d2s-MacBook-Pro.local&apos;, ip: &apos;192.168.1.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85), userDataDir=/var/folders/zh/85y8wq812lj64x0jsvpf2z4w0000gn/T/.org.chromium.Chromium.HbjKOo}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=65.0.3325.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5cef2e53feaa38a6a2ab90c45dfc072f
+*** Element info: {Using=xpath, value=//li[@aria-label=&apos;cat4&apos;]//parent::div//preceding-sibling::div}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at com.automation.pages.RemoveMediaPage.imageThumbnailSelected(RemoveMediaPage.java:23)
+	at com.automation.testcases.RemoveMediaTest.validateRemoveMedia(RemoveMediaTest.java:53)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409092880", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1409092880'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@aria-label=&apos;cat4&apos;]//parent::div//preceding-sibling::div&quot;}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;r2d2s-MacBook-Pro.local&apos;, ip: &apos;192.168.1.82&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85), userDataDir=/var/folders/zh/85y8wq812lj64x0jsvpf2z4w0000gn/T/.org.chromium.Chromium.HbjKOo}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=65.0.3325.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5cef2e53feaa38a6a2ab90c45dfc072f
+*** Element info: {Using=xpath, value=//li[@aria-label=&apos;cat4&apos;]//parent::div//preceding-sibling::div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at com.automation.pages.RemoveMediaPage.imageThumbnailSelected(RemoveMediaPage.java:23)
+	at com.automation.testcases.RemoveMediaTest.validateRemoveMedia(RemoveMediaTest.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.automation.testcases.RemoveMediaTest@72d818d1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.testcases.EmptyTrashPostsTest.emptyTrashPosts()'><b>emptyTrashPosts</b><br>Test class: com.automation.testcases.EmptyTrashPostsTest</td>
+<td></td>
+<td>7</td>
+<td>com.automation.testcases.EmptyTrashPostsTest@59494225</td></tr>
+<tr>
+<td title='com.automation.testcases.LoginBackendTest.loginBackendTestTitle()'><b>loginBackendTestTitle</b><br>Test class: com.automation.testcases.LoginBackendTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.testcases.LoginBackendTest@3f49dace</td></tr>
+<tr>
+<td title='com.automation.testcases.LoginBackendTest.loginTest()'><b>loginTest</b><br>Test class: com.automation.testcases.LoginBackendTest</td>
+<td></td>
+<td>3</td>
+<td>com.automation.testcases.LoginBackendTest@3f49dace</td></tr>
+<tr>
+<td title='com.automation.testcases.MoveToTrashPostsTest.moveToTrashPostsTest()'><b>moveToTrashPostsTest</b><br>Test class: com.automation.testcases.MoveToTrashPostsTest</td>
+<td></td>
+<td>5</td>
+<td>com.automation.testcases.MoveToTrashPostsTest@6e06451e</td></tr>
+<tr>
+<td title='com.automation.testcases.PostsPageTest.selectAllPostsTest()'><b>selectAllPostsTest</b><br>Test class: com.automation.testcases.PostsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.testcases.PostsPageTest@490ab905</td></tr>
+<tr>
+<td title='com.automation.testcases.AddNewMediaTest.validateAddNewMedia()'><b>validateAddNewMedia</b><br>Test class: com.automation.testcases.AddNewMediaTest<br>Parameters: /src/main/resources/images/cat1.jpg</td>
+<td></td>
+<td>0</td>
+<td>com.automation.testcases.AddNewMediaTest@56ac3a89</td></tr>
+<tr>
+<td title='com.automation.testcases.AddNewMediaTest.validateAddNewMedia()'><b>validateAddNewMedia</b><br>Test class: com.automation.testcases.AddNewMediaTest<br>Parameters: /src/main/resources/images/cat2.jpg</td>
+<td></td>
+<td>0</td>
+<td>com.automation.testcases.AddNewMediaTest@56ac3a89</td></tr>
+<tr>
+<td title='com.automation.testcases.AddNewMediaTest.validateAddNewMedia()'><b>validateAddNewMedia</b><br>Test class: com.automation.testcases.AddNewMediaTest<br>Parameters: /src/main/resources/images/cat3.jpg</td>
+<td></td>
+<td>0</td>
+<td>com.automation.testcases.AddNewMediaTest@56ac3a89</td></tr>
+<tr>
+<td title='com.automation.testcases.AddNewMediaTest.validateAddNewMedia()'><b>validateAddNewMedia</b><br>Test class: com.automation.testcases.AddNewMediaTest<br>Parameters: /src/main/resources/images/cat4.jpg</td>
+<td></td>
+<td>0</td>
+<td>com.automation.testcases.AddNewMediaTest@56ac3a89</td></tr>
+<tr>
+<td title='com.automation.testcases.AddNewPostTest.validateAddNewPost()'><b>validateAddNewPost</b><br>Test class: com.automation.testcases.AddNewPostTest<br>Parameters: Post 3, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla dolor in neque mattis tristique. Proin venenatis dui in condimentum faucibus. Praesent lobortis erat at ante vehicula tincidunt. Pellentesque sagittis nisl a magna bibendum, eget tristique quam venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam molestie, tellus at aliquam molestie, nisl ligula imperdiet lorem, sit amet dictum dui magna at libero. Cras id augue feugiat, pulvinar arcu quis, egestas libero. Fusce maximus iaculis metus, id pharetra augue pretium id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer vitae dapibus turpis, lobortis facilisis erat. Nam feugiat ornare massa, vel convallis augue pulvinar in. Phasellus consectetur, arcu sed sollicitudin porta, nunc mi viverra augue, iaculis dignissim augue velit nec neque. Mauris id nulla ornare, interdum velit vitae, venenatis quam. Proin auctor ex sem, quis viverra massa efficitur ac.
+
+, selenium, qa, tesla_s</td>
+<td></td>
+<td>28</td>
+<td>com.automation.testcases.AddNewPostTest@27c20538</td></tr>
+<tr>
+<td title='com.automation.testcases.AddNewPostTest.validateAddNewPost()'><b>validateAddNewPost</b><br>Test class: com.automation.testcases.AddNewPostTest<br>Parameters: Post 4, Duis et volutpat ex, in interdum dolor. Mauris mollis id ipsum molestie dictum. Curabitur imperdiet nulla neque, vitae hendrerit magna pharetra eu. Aenean viverra neque at semper aliquet. Mauris pretium, mi nec lobortis elementum, tellus neque pretium tellus, at pharetra nunc massa vitae ligula. Nullam quis lorem non sem sollicitudin dapibus et sed mauris. Etiam ornare, justo eget volutpat suscipit, erat dolor placerat enim, sed consectetur magna lectus nec mi. Cras suscipit lorem eu auctor ullamcorper. Pellentesque metus felis, mollis quis nisi quis, sodales ultrices eros. Sed euismod diam et vestibulum viverra. Donec pharetra elit non ex porta facilisis at sed metus. Phasellus eu nunc ut massa aliquet pretium.
+
+, selenium, qa, automation, maven, sunset</td>
+<td></td>
+<td>28</td>
+<td>com.automation.testcases.AddNewPostTest@27c20538</td></tr>
+<tr>
+<td title='com.automation.testcases.AddNewPostTest.validateAddNewPost()'><b>validateAddNewPost</b><br>Test class: com.automation.testcases.AddNewPostTest<br>Parameters: Post 5, Nullam id eros lacus. Cras a ex semper, dapibus nisl at, scelerisque mi. Etiam pretium massa non ligula malesuada, et rutrum lectus lacinia. Donec et lorem aliquam ante rhoncus egestas vitae at risus. Donec sagittis mattis nunc eu tempor. Cras vel interdum velit, vel pretium elit. Nunc faucibus blandit neque faucibus porttitor. Cras id augue sapien. In quis ornare libero, at egestas dolor. Donec imperdiet vulputate libero. Vivamus augue sapien, condimentum at efficitur eget, posuere non massa. Nullam ultrices accumsan magna id sodales. Ut et elit erat. Maecenas sed sem tristique, malesuada dui vitae, interdum velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eget massa sed sapien lacinia eleifend ac non felis.
+
+, selenium, qa, automation, maven, testng, lake</td>
+<td></td>
+<td>29</td>
+<td>com.automation.testcases.AddNewPostTest@27c20538</td></tr>
+<tr>
+<td title='com.automation.testcases.RemoveMediaTest.validateRemoveMedia()'><b>validateRemoveMedia</b><br>Test class: com.automation.testcases.RemoveMediaTest<br>Parameters: cat2</td>
+<td></td>
+<td>5</td>
+<td>com.automation.testcases.RemoveMediaTest@72d818d1</td></tr>
+<tr>
+<td title='com.automation.testcases.RemoveMediaTest.validateRemoveMedia()'><b>validateRemoveMedia</b><br>Test class: com.automation.testcases.RemoveMediaTest<br>Parameters: cat3</td>
+<td></td>
+<td>5</td>
+<td>com.automation.testcases.RemoveMediaTest@72d818d1</td></tr>
+<tr>
+<td title='com.automation.testcases.PostsPageTest.verfifyPostsPageTitle()'><b>verfifyPostsPageTitle</b><br>Test class: com.automation.testcases.PostsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.testcases.PostsPageTest@490ab905</td></tr>
+<tr>
+<td title='com.automation.testcases.AdminPageTest.verifyAdminPageTitle()'><b>verifyAdminPageTitle</b><br>Test class: com.automation.testcases.AdminPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.testcases.AdminPageTest@1e397ed7</td></tr>
+<tr>
+<td title='com.automation.testcases.AdminPageTest.verifyContactsLinkTest()'><b>verifyContactsLinkTest</b><br>Test class: com.automation.testcases.AdminPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.testcases.AdminPageTest@1e397ed7</td></tr>
+<tr>
+<td title='com.automation.testcases.AdminPageTest.verifyUserNameTest()'><b>verifyUserNameTest</b><br>Test class: com.automation.testcases.AdminPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.testcases.AdminPageTest@1e397ed7</td></tr>
+<tr>
+<td title='com.automation.testcases.LoginBackendTest.wordpressLogoTest()'><b>wordpressLogoTest</b><br>Test class: com.automation.testcases.LoginBackendTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.testcases.LoginBackendTest@3f49dace</td></tr>
+</table><p>
+</body>
+</html>

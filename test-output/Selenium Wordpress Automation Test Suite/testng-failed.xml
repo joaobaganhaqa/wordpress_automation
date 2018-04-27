@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Selenium Wordpress Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.automation.extentreport.ExtentReporter"/>
+  </listeners>
+  <test name="Free CRM App Test Cases(failed)">
+    <classes>
+      <class name="com.automation.testcases.RemoveMediaTest">
+        <methods>
+          <include name="validateRemoveMedia" invocation-numbers="0 3"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automation.testcases.RemoveMediaTest -->
+      <class name="com.automation.testcases.PostsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="selectPostsTest"/>
+          <include name="selectMultiplePostsTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automation.testcases.PostsPageTest -->
+    </classes>
+  </test> <!-- Free CRM App Test Cases(failed) -->
+</suite> <!-- Failed suite [Selenium Wordpress Automation Test Suite] -->

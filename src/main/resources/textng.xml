@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Wordpress Automation Test Suite">
+	
+	<listeners>
+		<listener class-name="com.automation.extentreport.ExtentReporter"></listener>
+	</listeners>
+	
+	<test name="Free CRM App Test Cases">
+		<classes>
+		<class name="com.automation.testcases.LoginBackendTest"></class>
+		<class name="com.automation.testcases.AdminPageTest"></class>
+		<class name="com.automation.testcases.PostsPageTest"></class>
+		<class name="com.automation.testcases.AddNewMediaTest"></class>
+		<class name="com.automation.testcases.AddNewPostTest"></class>
+		<class name="com.automation.testcases.RemoveMediaTest"></class>
+		<class name="com.automation.testcases.MoveToTrashPostsTest"></class>
+		<class name="com.automation.testcases.EmptyTrashPostsTest"></class>
+		</classes>
+	</test>
+</suite>
